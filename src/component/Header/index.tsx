@@ -20,6 +20,13 @@ const Header = () => {
         >
           Favorites
         </Link>
+        <Link
+          to="/custom"
+          className="favorites text-right"
+          style={{ textDecoration: "none" }}
+        >
+          Custom
+        </Link>
       </nav>
     </header>
   );
