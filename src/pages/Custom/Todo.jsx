@@ -1,13 +1,18 @@
-import React, { memo } from 'react'
+import React, { memo, useContext } from 'react'
+import Child from './child/Child'
 
 const Todo = ({todo,addTodo}) => {
     console.log("todo render")
-  return (
+    return (
     <div>
         {todo.map((item ,index)=>
-        <p>{item } {index}</p>
+        <p>{item } {index} <button onClick={()=>addTodo("POP")}>DELETE</button></p> 
         )}
-      <button onClick={()=>addTodo()}>Add TOdO</button>
+      <button onClick={()=>addTodo("PUSH")}>Add TOdO</button>
+      <div style={{background:"red"}}>
+        
+<Child/>
+      </div>
     </div>
   )
 }

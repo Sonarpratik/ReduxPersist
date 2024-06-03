@@ -10,6 +10,7 @@ import { useAppDispatch } from "./app/hooks";
 import { removeFavorite } from "./features/favMovieSlice";
 import Custom from "./pages/Custom";
 import useCustom from "./features/impors";
+import ForState from "./pages/useState/ForState";
 
 function App() {
 console.log("re render app")
@@ -23,6 +24,7 @@ console.log("re render app")
           <Route path="/movie/:id" element={<Movie />} />
           <Route path="/favorites" element={<Favorites />} />
           <Route path="/custom" element={<Custom />} />
+          <Route path="/for-state" element={<ForState />} />
         </Routes>
       </BrowserRouter>
     </div>

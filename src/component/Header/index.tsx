@@ -27,6 +27,13 @@ const Header = () => {
         >
           Custom
         </Link>
+        <Link
+          to="/for-state"
+          className="favorites text-right"
+          style={{ textDecoration: "none" }}
+        >
+          useState
+        </Link>
       </nav>
     </header>
   );
